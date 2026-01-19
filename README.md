@@ -84,18 +84,61 @@ Pastikan workspace ROS sudah berada di direktori yang benar dan semua dependency
 Masuk ke folder workspace:
 ```bash
 cd ~/catkin_ws
+```
 ```bash
 catkin build
+```
 ```bash
 source devel/setup.bash
-```bash
+```
 
 ### 2. Terminal 1 – Menjalankan Simulasi Gazebo
 Buka terminal baru dan jalankan simulasi TurtleBot3 di Gazebo:
 ```bash
 export TURTLEBOT3_MODEL=burger
 roslaunch turtlebot3_gazebo turtlebot3_world.launch
-
+```
 Terminal ini akan menampilkan:
 Dunia simulasi Gazebo
 Robot TurtleBot3 Burger
+
+### 3. Terminal 2 – Menjalankan Behavior Tree Controller
+Buka terminal baru, masuk ke workspace, lalu source kembali environment:
+```bash
+cd ~/catkin_ws
+source devel/setup.bash
+```
+Jalankan node Behavior Tree:
+```bash
+rosrun bt_turtlebot bt_node.py
+```
+Node ini bertugas:
+Mengontrol pergerakan robot
+Menjalankan logika Behavior Tree
+Menghindari rintangan
+Menghentikan robot saat coverage selesai
+
+### 4. Terminal 3 – Menjalankan Coverage Tracker dan RViz
+Buka terminal baru:
+```bash
+cd ~/catkin_ws
+source devel/setup.bash
+rosrun bt_turtlebot coverage_tracker.py
+```
+Jalankan RViz:
+Pengaturan RViz:
+Set Fixed Frame ke odom
+Tambahkan Marker
+Set topic Marker ke /coverage_marker
+
+Marker akan menampilkan jalur pergerakan robot sebagai area yang telah dibersihkan.
+
+
+### 5. Proses Berjalan
+
+Ketika semua node aktif:
+Robot bergerak secara otonom
+Robot menghindari rintangan
+Area yang dilewati robot ditandai di RViz
+Persentase coverage ditampilkan di terminal
+Robot berhenti otomatis ketika coverage target tercapai
