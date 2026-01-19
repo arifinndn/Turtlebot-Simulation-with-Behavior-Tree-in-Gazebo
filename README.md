@@ -10,11 +10,6 @@ Robot disimulasikan sebagai **robot pembersih lantai (floor cleaning robot)** ya
 - Melakukan *coverage cleaning* hingga persentase tertentu terpenuhi
 - Memvisualisasikan area yang telah dibersihkan menggunakan **RViz**
 
-Proyek ini menekankan pemisahan yang jelas antara:
-- **Condition** (kondisi)
-- **Action** (aksi)
-- **Monitoring coverage** (cakupan area)
-
 ---
 
 ## Teknologi yang Digunakan
