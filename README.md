@@ -73,6 +73,7 @@ elif self.obstacle.is_danger():
 
 else:
     self.move.run()
+###
 
 ## Cara Menjalankan Program
 
