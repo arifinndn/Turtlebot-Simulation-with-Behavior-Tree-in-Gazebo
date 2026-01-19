@@ -128,9 +128,9 @@ rosrun bt_turtlebot coverage_tracker.py
 Jalankan RViz:
 
 Pengaturan RViz:
-Set Fixed Frame ke odom
-Tambahkan Marker
-Set topic Marker ke /coverage_marker
+- Set Fixed Frame ke odom
+- Tambahkan Marker
+- Set topic Marker ke /coverage_marker
 
 Marker akan menampilkan jalur pergerakan robot sebagai area yang telah dibersihkan.
 
