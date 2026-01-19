@@ -52,7 +52,7 @@ Sistem dijalankan menggunakan **3 terminal utama**:
 
 ## Behavior Tree Design
 Behavior Tree menggunakan **Priority Selector** dengan urutan prioritas sebagai berikut:
-![Alt Text](BT_Diagram)
+![Alt Text](BT_Diagram.jpeg)
 1. **Coverage Selesai**  
    Jika coverage sudah terpenuhi → robot berhenti
 
