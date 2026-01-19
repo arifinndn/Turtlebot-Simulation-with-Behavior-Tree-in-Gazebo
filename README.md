@@ -125,8 +125,7 @@ cd ~/catkin_ws
 source devel/setup.bash
 rosrun bt_turtlebot coverage_tracker.py
 ```
-Jalankan RViz:
-
+**Jalankan RViz**
 Pengaturan RViz:
 - Set Fixed Frame ke odom
 - Tambahkan Marker
