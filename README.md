@@ -138,8 +138,8 @@ Marker akan menampilkan jalur pergerakan robot sebagai area yang telah dibersihk
 ### 5. Proses Berjalan
 
 Ketika semua node aktif:
-Robot bergerak secara otonom
-Robot menghindari rintangan
-Area yang dilewati robot ditandai di RViz
-Persentase coverage ditampilkan di terminal
-Robot berhenti otomatis ketika coverage target tercapai
+- Robot bergerak secara otonom
+- Robot menghindari rintangan
+- Area yang dilewati robot ditandai di RViz
+- Persentase coverage ditampilkan di terminal
+- Robot berhenti otomatis ketika coverage target tercapai
