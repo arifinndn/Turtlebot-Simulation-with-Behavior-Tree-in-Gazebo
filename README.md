@@ -73,3 +73,27 @@ elif self.obstacle.is_danger():
 
 else:
     self.move.run()
+
+## Cara Menjalankan Program
+
+### 1. Persiapan Workspace
+Pastikan workspace ROS sudah berada di direktori yang benar dan semua dependency telah terpasang.
+
+Masuk ke folder workspace:
+```bash
+cd ~/catkin_ws
+```bash
+catkin build
+```bash
+source devel/setup.bash
+```bash
+
+### 2. Terminal 1 – Menjalankan Simulasi Gazebo
+Buka terminal baru dan jalankan simulasi TurtleBot3 di Gazebo:
+```bash
+export TURTLEBOT3_MODEL=burger
+roslaunch turtlebot3_gazebo turtlebot3_world.launch
+
+Terminal ini akan menampilkan:
+Dunia simulasi Gazebo
+Robot TurtleBot3 Burger
